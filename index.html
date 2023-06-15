@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Socket</title>
+  </head>
+  <body>
+    <nav class="p-5 bg-blue-950 text-white">Navbar</nav>
+    <div class="chats text-2xl"></div>
+    <section class="main flex flex-col">
+      <div
+        class="container flex justify-between fixed bottom-5 border-[5px] border-blue-950 w-full px-5 py-2 text-2xl"
+      >
+        <input type="text" class="message-box w-full outline-none" />
+        <button
+          onclick="getTextValue()"
+          class="p-5 px-10 bg-blue-950 text-white"
+        >
+          Send
+        </button>
+      </div>
+    </section>
+  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.1.2/socket.io.js"></script>
+  <script src="main.js" type="module"></script>
+</html>
